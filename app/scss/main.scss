@@ -1,0 +1,93 @@
+@import "vars";
+
+$sliderWidth: 960px;
+$sliderHeight: 693px;
+
+.slideit {
+	width: $sliderWidth;
+	height: $sliderHeight;
+	position: relative;
+	border: 5px solid black;
+	margin: auto;
+	overflow: hidden;
+	&:hover .sl-prew-button {
+		transform: translateX(50px);
+	}
+	&:hover .sl-next-button {
+		transform: translateX(-50px);
+	}
+	&:hover .sl-circles {
+		transform: translateY(-30px);
+	}
+	.sl-carousel {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		background: #000;
+		display: flex;
+	}
+	.sl-carousel-nav {
+		position: absolute;
+		bottom: 0;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.sl-prew-button {
+		height: 100%;
+		position: relative;
+		width: 50px;
+		background: black;
+		border: 0;
+		opacity: .25;
+		outline: 0;
+		margin-left: -50px;
+		transition: .5s ease-in-out;
+		cursor: pointer;
+
+	}
+	.sl-next-button {
+		height: 100%;
+		position: relative;
+		width: 50px;
+		background: black;
+		border: 0;
+		opacity: .25;
+		outline: 0;
+		margin-right: -50px;
+		transition: .5s ease-in-out;
+		cursor: pointer;
+	}
+	.sl-circles {
+		display: flex;
+		margin-top: auto;
+		padding-bottom: 8px;
+		margin-bottom: -30px;
+		transition: .5s ease-in-out;
+		
+	}
+	.sl-circle {
+		width: 20px;
+		height: 20px;
+		margin-left: 3px;
+		border-radius: 50%;
+		background: #ffffff4d;
+		transition: 0.4s;
+			&.active {
+			background: #ffffffbd;
+		}
+		cursor: pointer;
+	}
+	.img-wrap {
+		width: $sliderWidth;
+		img {
+			height: 100%;;
+		}
+	}
+	
+}
+
+@import "media"; // Always at the end
