@@ -8,7 +8,7 @@
 
 ---
 
-![markup](https://github.com/ArtemChubatyi/tic_tac_toe/blob/master/preview.bmp "Превью")
+![markup](https://github.com/ArtemChubatyi/slideIt/blob/master/preview.bmp "Превью")
 
 ---
 
